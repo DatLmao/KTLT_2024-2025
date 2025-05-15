@@ -91,6 +91,14 @@ string diff(string s, string t){    //Hàm trừ 2 số lớn
 	return x;
 }
 
+int remainder(string s, int b) { //chia lấy phần dư
+    long long num = 0;
+    for (int i = 0; i < s.size(); i++) {
+        num = (num * 10 + (s[i] - '0')) % b;
+    }
+    return num;
+}
+
 int main() {
     string s, t;
     cin >> s >> t;
